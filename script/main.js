@@ -42,8 +42,7 @@ async function createEvent(){
 
             //appenda allt!!!
             main.appendChild(eventContainer);
-            eventContainer.appendChild(eventInfoContainer);
-            eventInfoContainer.appendChild(eventBajsContainer);
+            eventContainer.appendChild(eventBajsContainer);
             eventBajsContainer.appendChild(speakerCol);
             eventBajsContainer.appendChild(scheduleCol);
 
