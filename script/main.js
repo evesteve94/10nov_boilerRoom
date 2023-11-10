@@ -18,12 +18,7 @@ async function createEvent(){
         speakers.forEach(function(speaker){
             //1. skapa våra html-element
             const main = document.querySelector('main');
-
-            const eventContainer = document.createElement('div');
-            eventContainer.classList.add('event-container');
-
-            const eventInfoContainer = document.createElement('div');
-            eventInfoContainer.classList.add('event-info-container');
+            const eventContainer = document.querySelector('.event-container');
 
             const eventBajsContainer = document.createElement('div');
             eventBajsContainer.classList.add('event-bajs-container');
@@ -41,10 +36,11 @@ async function createEvent(){
 
 
             //appenda allt!!!
-            main.appendChild(eventContainer);
+
             eventContainer.appendChild(eventBajsContainer);
             eventBajsContainer.appendChild(speakerCol);
             eventBajsContainer.appendChild(scheduleCol);
+            
 
             speakerCol.appendChild(speakersName);
             speakerCol.appendChild(speakersCompany);
@@ -57,6 +53,11 @@ async function createEvent(){
             const scheduleDuration = document.createElement('h4');
             const scheduleTopic = document.createElement('h2');
             const scheduleDescription = document.createElement('p');
+            const scheduleCol = document.createElement('div');
+            scheduleCol.classList.add('schedule-col');
+
+            const scheduleHeading = document.createElement('h3');
+
 
             scheduleTime.textContent = schedule.time;
             scheduleStage.textContent = schedule.stage;
@@ -64,12 +65,15 @@ async function createEvent(){
             scheduleTopic.textContent = schedule.topic;
             scheduleDescription.textContent = schedule.description;
 
+
+            
             scheduleCol.appendChild(scheduleTopic);
             scheduleCol.appendChild(scheduleTime);
             scheduleCol.appendChild(scheduleStage);
             scheduleCol.appendChild(scheduleDuration);
             scheduleCol.appendChild(scheduleDuration);
             scheduleCol.appendChild(scheduleDescription);
+            
         })
     } else {
     console.log(`HTTP error message: ${responseSchedule.status} ${responseSpeakers.status}`)
@@ -77,10 +81,7 @@ async function createEvent(){
 
 
 }
-            const scheduleCol = document.createElement('div');
-            scheduleCol.classList.add('schedule-col');
 
-            const scheduleHeading = document.createElement('h3');
 createEvent();
 
 //3. forIn loop för allt
