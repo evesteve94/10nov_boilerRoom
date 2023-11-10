@@ -70,9 +70,9 @@ async function createEvent(){
             
             
 
-            scheduleTime.textContent = schedule.time;
-            scheduleStage.textContent = schedule.stage;
-            scheduleDuration.textContent = schedule.duration;
+            scheduleTime.textContent = `Time: ${schedule.time}`;
+            scheduleStage.textContent = `Place: ${schedule.stage}`;
+            scheduleDuration.textContent = `Duration: ${schedule.duration}`;
             scheduleTopic.textContent = schedule.topic;
             scheduleDescription.textContent = schedule.description;
 
