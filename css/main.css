@@ -127,4 +127,9 @@ h3 {
         margin-left: 5%;
         height: auto;
     }
+
+    .static-info-container h3, p{
+        padding: 2% 0;
+        margin: 0;
+    }
 }
