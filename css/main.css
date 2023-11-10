@@ -7,6 +7,7 @@
 body {
     background: #6554AF;
     color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -23,6 +24,10 @@ header {
     width: 100%;
     background-image: url(../imgs/person-with-a-laptop-that-looks-very-happy.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
 }
 
 .title-container img {
@@ -32,7 +37,30 @@ header {
     right: 5%;
     top: 5%;
     z-index: 0;
+}
 
+.title-container h3 {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: -0.1%;
+}
+
+.title-container h1, h3 {
+    margin: 2% 3%;
+}
+
+.title-container nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: auto;
+    padding: 2% 0;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.title-container nav a {
+    text-decoration: none;
 }
 
 
