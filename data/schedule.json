@@ -19,5 +19,34 @@
         "duration" : "All night, alright?",
         "topic": "How to Catch up",
         "description" : "Our very own Malmö-Walter White will teach us about the dangers and wonders of cooking meth, technologically speaking ;) OBSOBSOBS, this is not about drugs, only a joke with drug.like-references. Let's partyyyy!!! But also, stay in school, kidz. U R not 2 cool for school "
+    },
+    {
+        "time" : "17:00",
+        "stage" : "Sorgenfri Hundrastgård",
+        "duration" : "1h 30min",
+        "topic": "How To Get Your Dog To Just CALM THE FUCK DOWN",
+        "description" : "Eva 'evesteve' Björling is a one-stop-shop for all your dog/work-balance needs. In this multi-media presenation complete with obedience activities - she and her loco dog Stevie will teach you how to exhaust your dog to the point of near death, so YOU can focus"
+    },
+    {
+        "time" : "18:00",
+        "stage" : "Värnhem Falafel",
+        "duration" : "24h Marathon!",
+        "topic": "How To Design Your Website and Your Life",
+        "description" : "Is your life dull and colorless? Local legend Jumi 'elevrådsrepresentant' Strandberg will spice up your life, Spice Girls-style! Learn valuable skills within coding and life coaching, and join us in our pyramid-scheme extravaganza!"
+    },
+    {
+        "time" : "20:00",
+        "stage" : "Pildammarna",
+        "duration" : "2h",
+        "topic": "How to Code and Chill With Your Child",
+        "description" : "Are you a parent first and a coder sencond? Make your job and your child your primary concerns without leaving anyone or anything behind! This may or may not include child labour, come to find out! "
+    },
+    {
+        "time" : "21:00",
+        "stage" : "24/7 Fitness",
+        "duration" : "1-5h depending on your weak-ass body, bro",
+        "topic": "How To Maintain Gainz and Brainz",
+        "description" : "Is your body slowly decaying from sitting down and coding/snacking day after day after day?? Have no fear, Aleksei is here! In this equally informative and muscule-building session, you will learn how to clench your thighs, balance on a ball, bench your workdesk, and keep up your cardio - all while coding!"
     }
+
 ]
