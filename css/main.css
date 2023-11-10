@@ -12,4 +12,27 @@ body {
 header {
     border: 1px solid green;
     display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    height: 40vh;
 }
+
+.title-container {
+    height: 100%;
+    width: 100%;
+    background-image: url(../imgs/person-with-a-laptop-that-looks-very-happy.png);
+    background-size: cover;
+}
+
+.title-container img {
+    height: 20%;
+    width: auto;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 0;
+
+}
+
+
