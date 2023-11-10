@@ -1,0 +1,23 @@
+[
+    {
+        "time" : "14:00",
+        "stage" : "Shecodes Stage",
+        "duration" : "Approx. 2h - maybe 5 min",
+        "topic": "How to delete 5k files",
+        "description" : "In this exciting 2h presentation, Linus will teach us how to not fuck up massively during group projects and how to protect your files AGAINST YOURSELF"
+    },
+    {
+        "time" : "16:30",
+        "stage" : "Banking ID Stage",
+        "duration" : "Aprrox. 2h",
+        "topic": "JavaScript for trading algorithms",        
+        "description" : "Local entrepreneur Mirza 'Strimlaren' Mesinovic will bring his expert level skills within trading algorithims and how to make it big in Bollywood BABY"
+    },
+    {
+        "time" : "23:00",
+        "stage" : "Azalee Blackjack-tjack Table",
+        "duration" : "All night, alright?",
+        "topic": "How to Catch up",
+        "description" : "Our very own Malmö-Walter White will teach us about the dangers and wonders of cooking meth, technologically speaking ;) OBSOBSOBS, this is not about drugs, only a joke with drug.like-references. Let's partyyyy!!! But also, stay in school, kidz. U R not 2 cool for school "
+    }
+]
