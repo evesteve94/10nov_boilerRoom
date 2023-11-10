@@ -11,10 +11,16 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Header Section  */
 
 header {
-    border: 1px solid green;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -102,26 +108,47 @@ h3 {
 /* Event */
 
 .event-container {
-    border: 1px solid blue;
-    display: flex;
-}
-
-.event-bajs-container {
-    width: 100%;
-    border: 1px solid green;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
-.event-bajs-container img { 
-    width: 400px;
+.test-div img {
     height: auto;
+    width: 50%;
 }
 
 
 
 .event-container h3 {
     font-size: 300%;
+}
+
+.schedule-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.speaker-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.test-div{
+    width: 100%;
+    height: 67vh;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
 }
 
 

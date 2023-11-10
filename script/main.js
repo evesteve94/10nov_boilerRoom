@@ -13,18 +13,23 @@ async function createEvent(){
         const schedules = await responseSchedule.json();
         // console.log(speakersList);
         // console.log(scheduleList);
-
+        const eventContainer = document.getElementById("event");
         //3.1 forEach loop för speakersList
+            const speakerCol = document.createElement('div');
+            speakerCol.classList.add('speaker-col');
+
+            const scheduleCol = document.createElement('div');
+
+            scheduleCol.classList.add('schedule-col');
+
+
+
         speakers.forEach(function(speaker){
             //1. skapa våra html-element
-            const main = document.querySelector('main');
-            const eventContainer = document.querySelector('.event-container');
+           
 
             const eventBajsContainer = document.createElement('div');
             eventBajsContainer.classList.add('event-bajs-container');
-
-            const speakerCol = document.createElement('div');
-            speakerCol.classList.add('speaker-col');
 
             const speakersName = document.createElement('h3');
             const speakersCompany = document.createElement('h4')
@@ -37,27 +42,33 @@ async function createEvent(){
 
             //appenda allt!!!
 
-            eventContainer.appendChild(eventBajsContainer);
-            eventBajsContainer.appendChild(speakerCol);
-            eventBajsContainer.appendChild(scheduleCol);
+            // eventContainer.appendChild(eventBajsContainer);
             
+            
+            
+            const testDiv = document.createElement('div');
+            testDiv.classList.add('test-div');
+            testDiv.appendChild(speakersName);
+            testDiv.appendChild(speakersCompany);
+            testDiv.appendChild(speakersImage);
+            speakerCol.appendChild(testDiv);
+            eventContainer.appendChild(speakerCol);
 
-            speakerCol.appendChild(speakersName);
-            speakerCol.appendChild(speakersCompany);
-            speakerCol.appendChild(speakersImage);
+
         })
         //3.2 forEach loop för scheduleList
         schedules.forEach(function(schedule){
+            const eventBajsContainer = document.createElement('div');
+            eventBajsContainer.classList.add('event-bajs-container');
+            // eventContainer.appendChild(eventBajsContainer);
             const scheduleTime = document.createElement('h4');
             const scheduleStage = document.createElement('h4');
             const scheduleDuration = document.createElement('h4');
             const scheduleTopic = document.createElement('h2');
             const scheduleDescription = document.createElement('p');
-            const scheduleCol = document.createElement('div');
-            scheduleCol.classList.add('schedule-col');
 
-            const scheduleHeading = document.createElement('h3');
-
+            
+            
 
             scheduleTime.textContent = schedule.time;
             scheduleStage.textContent = schedule.stage;
@@ -66,19 +77,20 @@ async function createEvent(){
             scheduleDescription.textContent = schedule.description;
 
 
-            
-            scheduleCol.appendChild(scheduleTopic);
-            scheduleCol.appendChild(scheduleTime);
-            scheduleCol.appendChild(scheduleStage);
-            scheduleCol.appendChild(scheduleDuration);
-            scheduleCol.appendChild(scheduleDuration);
-            scheduleCol.appendChild(scheduleDescription);
-            
-        })
+            const testDiv = document.createElement('div');
+            testDiv.classList.add('test-div');
+            testDiv.appendChild(scheduleTopic);
+            testDiv.appendChild(scheduleTime);
+            testDiv.appendChild(scheduleStage);
+            testDiv.appendChild(scheduleDuration);
+            testDiv.appendChild(scheduleDuration);
+            testDiv.appendChild(scheduleDescription);
+            scheduleCol.appendChild(testDiv);
+            eventContainer.appendChild(scheduleCol);
+        });
     } else {
     console.log(`HTTP error message: ${responseSchedule.status} ${responseSpeakers.status}`)
     }
-
 
 }
 
