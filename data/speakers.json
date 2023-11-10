@@ -1,0 +1,20 @@
+[
+  {
+    "Speaker": "Linus Fridberg",
+    "Topic": "How to delete 5k files",
+    "Company": "Dammfri AB",
+    "Image": "https://media.licdn.com/dms/image/D4D03AQEBAUz2AF0ieA/profile-displayphoto-shrink_400_400/0/1674112222167?e=1704931200&v=beta&t=w1JX7ZaugTB8ZpOB8NxqqsZSaSBirg9-5IINLIyW7tI"
+  },
+  {
+    "Speaker": "Mirza Mesinovic",
+    "Topic": "JavaScript for trading algorithms",
+    "Company": "Lund Inc",
+    "Image": "https://ca.slack-edge.com/T4WV23X5X-U05QSBK4G3C-136a88b08f64-512"
+  },
+  {
+    "Speaker": "Moutasem",
+    "Topic": "How to Catch up",
+    "Company": "Oxie Foundation",
+    "Image": "https://ca.slack-edge.com/T4WV23X5X-U05R977Q4G5-3e732f6e4058-512"
+  }
+]
