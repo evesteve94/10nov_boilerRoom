@@ -22,7 +22,23 @@ scheduleCol.classList.add('schedule-col');
 
 const scheduleHeading = document.createElement('h3');
 //2. ansluta json filer - fetch synch await --> alla arrays
+async function createEvent(){
+    const responseSpeakers = await fetch('./data/speakers.json')
+    //console.log(responseSpeakers);
+    const responseSchedule = await fetch('./data/schedule.json')
+    //console.log(responseSchedule);
 
+    if(responseSpeakers.ok && responseSchedule.ok){
+        const speakersList = await responseSpeakers.json();
+        const scheduleList = await responseSchedule.json();
+        console.log(speakersList);
+        console.log(scheduleList);
+    } else {
+    console.log(`HTTP error message: ${responseSchedule.status} ${responseSpeakers.status}`)
+    }
+}
+
+createEvent();
 
 //3. forIn loop för allt
 //4. data från json-filer ska in i våra element
