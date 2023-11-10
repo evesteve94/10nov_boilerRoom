@@ -1,5 +1,4 @@
 //todo
-const main = document.querySelector('main');
 
 
 //2. ansluta json filer - fetch synch await --> alla arrays
@@ -18,6 +17,7 @@ async function createEvent(){
         //3.1 forEach loop för speakersList
         speakers.forEach(function(speaker){
             //1. skapa våra html-element
+            const main = document.querySelector('main');
 
             const eventContainer = document.createElement('div');
             eventContainer.classList.add('event-container');
@@ -41,7 +41,6 @@ async function createEvent(){
 
 
             //appenda allt!!!
-            main.appendChild(aboutContainer);
             main.appendChild(eventContainer);
             eventContainer.appendChild(eventInfoContainer);
             eventInfoContainer.appendChild(eventBajsContainer);
