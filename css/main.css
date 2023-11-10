@@ -64,7 +64,7 @@ h3 {
 .title-container nav {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     margin-top: auto;
     padding: 2% 0;
     background: #fff;
@@ -80,6 +80,7 @@ h3 {
     display: flex;
     flex-direction: column;
     padding: 5%;
+    line-height: 2rem;
 }
 
 .static-info-container h3, p{
@@ -97,6 +98,33 @@ h3 {
     margin-top: 5%;
     height: auto;
 }
+
+/* Event */
+
+.event-container {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.event-bajs-container {
+    width: 100%;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+}
+
+.event-bajs-container img { 
+    width: 400px;
+    height: auto;
+}
+
+
+
+.event-container h3 {
+    font-size: 300%;
+}
+
+
 
 @media screen and (min-width: 768px) {
     .title-container {
